@@ -1,14 +1,15 @@
-name: test greetings
+name: test echo port
 on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-      matrix: node-version:[14.x]
+      matrix:
+        node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
-      - name: Use NodeJS ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
+        name: Use NodeJS ${{ matrix.node-version }}
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn

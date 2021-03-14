@@ -1,0 +1,14 @@
+{
+  "name": "hyper63-adapter-greeting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@twilson63/hyper63-port-echo": "^1.0.0",
+    "tape": "^5.2.2"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node test"
+  }
+}
